@@ -1218,6 +1218,7 @@ MonoBehaviour:
   playerTilt: 1.8
   bullet: {fileID: 1421544465134668, guid: ea1e792685ea9ea47949dd24d87b17c1, type: 2}
   missile: {fileID: 1285237520826470, guid: 852e33b463cc32e479b2fffaa61e4397, type: 2}
+  explosion: {fileID: 1534200720646996, guid: 89b15532e79cb754f86d23188eef6c38, type: 2}
   gun1: {fileID: 4759011430100852}
   gun2: {fileID: 4910186498775600}
   gun3: {fileID: 4743238455564710}
@@ -1233,6 +1234,9 @@ MonoBehaviour:
   gunFireRate: 0.13
   rocketFireRate: 0
   missileFireRate: 3
+  gunPower: 0
+  rocketPower: 0
+  missilePower: 0
 --- !u!136 &136859431234292634
 CapsuleCollider:
   m_ObjectHideFlags: 1

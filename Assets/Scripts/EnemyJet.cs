@@ -8,6 +8,7 @@ public class EnemyJet : MonoBehaviour
     public float speed = 0.0f;
     public int scoreValue = 0;
     public int endurance = 0;
+    public GameObject explosion;
 
 	// Use this for initialization
 	void Start ()
@@ -28,11 +29,17 @@ public class EnemyJet : MonoBehaviour
             Destroy(other.gameObject);
             Destroyer();
         }
+
+        if(other.tag == "Player")
+        {
+            Destroyer();
+        }
     }
 
     //Metodo para destruir el jet
     void Destroyer ()
     {
+        Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

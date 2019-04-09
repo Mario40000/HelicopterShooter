@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 4531606581168128}
   - component: {fileID: 95111084471284746}
   - component: {fileID: 136518804857338750}
+  - component: {fileID: 114411407986758180}
   m_Layer: 0
   m_Name: F16
   m_TagString: Enemy
@@ -737,7 +738,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506243268958732}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 15.29, y: 0, z: 0}
+  m_LocalPosition: {x: -37.4, y: 0, z: 28}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4043595780736470}
@@ -2088,6 +2089,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114411407986758180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506243268958732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057cccea0adea6e4b9cd4924d5ad3683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  scoreValue: 0
+  endurance: 0
+  explosion: {fileID: 1534200720646996, guid: 89b15532e79cb754f86d23188eef6c38, type: 2}
 --- !u!136 &136518804857338750
 CapsuleCollider:
   m_ObjectHideFlags: 1

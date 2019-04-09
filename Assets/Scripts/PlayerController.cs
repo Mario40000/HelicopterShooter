@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     //Prefabs
     public GameObject bullet;
     public GameObject missile;
+    public GameObject explosion;
 
     //Armas
     public Transform gun1;
@@ -171,5 +172,21 @@ public class PlayerController : MonoBehaviour {
                 Instantiate(missile, missile2.position, Quaternion.identity);
             }
         }
+    }
+
+    //Comprobamos si chocamos con algo
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Enemy")
+        {
+            Destroyer();
+        }
+    }
+
+    //Metodo para destruir al player
+    void Destroyer ()
+    {
+        Instantiate(explosion, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }
